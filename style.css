@@ -126,22 +126,22 @@ body {
 }
 
 .enroll {
-    font-size: 18px;
-    margin-left: 20%;
+    font-size: 14px;
+    margin-left: 10%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .regitration-heading {
-    font-size: 50px;
+    font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 10px;
 }
 
 .para2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 20%;
-    font-size: 20px;
+    margin-left: 10%;
+    font-size: 15px;
     margin-top: 20px;
 
 }
