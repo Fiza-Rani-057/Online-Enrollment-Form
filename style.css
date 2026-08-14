@@ -523,3 +523,103 @@ select option {
     color: rgb(72, 72, 72);
         text-align: justify;
 }
+
+ /* Capcha logo  */
+
+ .recaptcha {
+    width: 300px;
+    min-height: 75px;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-left: 6%;
+    margin-top: 4%;
+}
+
+.captcha-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.captcha-check input {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.captcha-check label {
+    font-size: 15px;
+    color: #555;
+}
+
+.captcha-logo {
+    text-align: center;
+    color: #555;
+}
+
+.captcha-logo span {
+    display: block;
+    font-size: 35px;
+    color: #4285f4;
+}
+
+.captcha-logo small {
+    font-size: 10px;
+}
+/* Section 8  */
+ .imp-notice{
+    height: auto;
+    width: 88%;
+    padding: 1%;
+    background-color: #f0f7fc;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border: 1px solid #a2d4f6;
+    border-radius: 10px;
+ }
+ .h3{
+  display: flex;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ .paraaa{
+    color: rgb(130, 128, 128);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .h3 i{
+    color: #0070BA;
+    margin-right: 10px;
+ }
+  .submit-btn{
+    background-color: #0070BA;
+    color: white;
+    font-size: 20px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 20px;
+    border: 2px solid #0070BA;
+    border-radius: 10px;
+  }
+  .submit-btn i{
+    margin-right: 10px;
+    font-size: 20px;
+  }
