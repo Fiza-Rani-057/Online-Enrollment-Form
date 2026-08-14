@@ -628,6 +628,7 @@ select option {
     margin-bottom: 20px;
     border: 2px solid #0070BA;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .submit-btn i {
