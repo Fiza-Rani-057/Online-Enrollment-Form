@@ -322,6 +322,7 @@ select{
    border: 2px solid rgb(216, 216, 216);
    background-color: #f7f6f6;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: rgb(110, 110, 110 , 0.4);
 }
  span{
     color: #0070BA;
@@ -340,10 +341,12 @@ select{
    border-radius: 10px;
    border: 2px solid rgb(216, 216, 216);
    background-color: #f7f6f6;
+  
  }
  input::placeholder{
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(110, 110, 110 , 0.4);
  }
  label{
     font-size: 15px;
