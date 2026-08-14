@@ -176,7 +176,7 @@ body {
     color: black;
     flex-direction: row;
     gap: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: white;
     border: 1px solid rgb(229, 225, 225);
     padding: 10px 0;
@@ -223,7 +223,7 @@ body {
     font-family: 'Manrope', sans-serif;
     font-weight: bold;
     border: none;
-     cursor: pointer;
+    cursor: pointer;
 }
 
 #result:hover {
@@ -235,7 +235,7 @@ body {
     font-family: 'Manrope', sans-serif;
     font-weight: bold;
     border: none;
-       cursor: pointer;
+    cursor: pointer;
 }
 
 #id-card {
@@ -246,7 +246,7 @@ body {
     font-weight: bold;
     border: none;
     background-color: #faf7f7;
-       cursor: pointer;
+    cursor: pointer;
 }
 
 #id-card i {
@@ -285,3 +285,22 @@ body {
 }
 
 /* Section2  */
+/* Section 3  */
+.course-details i {
+    color: #0070BA;
+    margin-left: 80px;
+    margin-right: 8px;
+   font-size: 20px;
+   margin-top: 6px;
+}
+
+.course-details {
+    display: flex;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+/* Section 3  */
