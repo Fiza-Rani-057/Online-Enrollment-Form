@@ -290,8 +290,8 @@ body {
     color: #0070BA;
     margin-left: 80px;
     margin-right: 8px;
-   font-size: 20px;
-   margin-top: 6px;
+    font-size: 20px;
+    margin-top: 6px;
 }
 
 .course-details {
@@ -302,63 +302,100 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
 }
-.main-form-div{
+
+.main-form-div {
     display: flex;
     height: auto;
     width: 100%;
     flex-wrap: wrap;
     margin-top: 40px;
 }
-select{
-   padding-left: 20px;
-   padding-right: 400px;
-   padding-top: 10px;
-   padding-bottom: 10px;
+
+select {
     padding-left: 20px;
-   padding-right: 300px;
-   padding-top: 15px;
-   padding-bottom: 15px;
-   border-radius: 10px;
-   border: 2px solid rgb(216, 216, 216);
-   background-color: #f7f6f6;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   color: rgb(110, 110, 110 , 0.4);
+    padding-right: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(216, 216, 216);
+    background-color: #f7f6f6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(110, 110, 110, 0.4);
 }
- span{
+
+span {
     color: #0070BA;
- }
- .form-div-1{
+}
+
+.form-div-1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0px 6%;
- }
- input{
+}
+
+input {
     padding-left: 20px;
-   padding-right: 320px;
-   padding-top: 15px;
-   padding-bottom: 15px;
-   border-radius: 10px;
-   border: 2px solid rgb(216, 216, 216);
-   background-color: #f7f6f6;
-  
- }
- input::placeholder{
+    padding-right: 320px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 10px;
+    border: 2px solid rgb(216, 216, 216);
+    background-color: #f7f6f6;
+
+}
+
+input::placeholder {
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(110, 110, 110 , 0.4);
- }
- label{
+    color: rgb(110, 110, 110, 0.4);
+}
+input:focus {
+    border-color: #0878c9;
+    outline: none;
+}
+label {
     font-size: 15px;
     margin-left: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
- #city , #campus{
+}
+
+#address {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    width: 87%;
+    border-radius: 10px;
+    border: 2px solid rgb(216, 216, 216);
+    background-color: #f7f6f6;
+    margin-left: 6%;
+    margin-bottom: 20px;
+}
+
+#label {
+    margin-left: 6%;
+}
+
+#span {
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#city,
+#campus {
     margin-bottom: 15px;
- }
- .form-div-2{
-     display: flex;
+}
+
+.form-div-2 {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
- }
+}
+
 /* Section 3  */
