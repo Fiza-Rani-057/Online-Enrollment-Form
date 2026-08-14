@@ -354,10 +354,12 @@ input::placeholder {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(110, 110, 110, 0.4);
 }
+
 input:focus {
     border-color: #0878c9;
     outline: none;
 }
+
 label {
     font-size: 15px;
     margin-left: 5px;
@@ -399,3 +401,18 @@ label {
 }
 
 /* Section 3  */
+/* Section 5  */
+#select {
+    padding-left: 20px;
+    padding-right: 400px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 10px;
+    border: 2px solid rgb(216, 216, 216);
+    background-color: #f7f6f6;
+}
+select option {
+    font-size: 16px;
+    color: rgb(133, 130, 130);
+    background-color: rgb(248, 247, 247);
+}
