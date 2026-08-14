@@ -322,9 +322,9 @@ select {
     padding-bottom: 15px;
     border-radius: 10px;
     border: 2px solid rgb(216, 216, 216);
-    background-color: #f7f6f6;
+    background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(110, 110, 110, 0.4);
+    color: rgb(91, 90, 90);
 }
 
 span {
@@ -346,6 +346,7 @@ input {
     border-radius: 10px;
     border: 2px solid rgb(216, 216, 216);
     background-color: #f7f6f6;
+    cursor: not-allowed;
 
 }
 
@@ -373,9 +374,11 @@ label {
     width: 87%;
     border-radius: 10px;
     border: 2px solid rgb(216, 216, 216);
-    background-color: #f7f6f6;
+    background-color: white;
     margin-left: 6%;
     margin-bottom: 20px;
+    cursor: default;
+     color: rgb(91, 90, 90);
 }
 
 #label {
@@ -409,11 +412,12 @@ label {
     padding-bottom: 18px;
     border-radius: 10px;
     border: 2px solid rgb(216, 216, 216);
-    background-color: #f7f6f6;
+    background-color: white;
+    cursor: default;
 }
 
 select option {
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(133, 130, 130);
     background-color: rgb(248, 247, 247);
 }
@@ -424,9 +428,10 @@ select option {
     width: 86%;
     border-radius: 10px;
     border: 2px solid rgb(216, 216, 216);
-    background-color: #f7f6f6;
+    background-color: white;
     margin-left: 6%;
     margin-bottom: 20px;
+     color: rgb(91, 90, 90);
 }
 
 .laptop {
@@ -521,18 +526,18 @@ select option {
 .conditions label {
     font-size: 15px;
     color: rgb(72, 72, 72);
-        text-align: justify;
+    text-align: justify;
 }
 
- /* Capcha logo  */
+/* Capcha logo  */
 
- .recaptcha {
+.recaptcha {
     width: 300px;
     min-height: 75px;
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     background: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -573,8 +578,9 @@ select option {
 .captcha-logo small {
     font-size: 10px;
 }
+
 /* Section 8  */
- .imp-notice{
+.imp-notice {
     height: auto;
     width: 88%;
     padding: 1%;
@@ -586,30 +592,34 @@ select option {
     margin-bottom: 20px;
     border: 1px solid #a2d4f6;
     border-radius: 10px;
- }
- .h3{
-  display: flex;
+}
+
+.h3 {
+    display: flex;
     text-align: left;
     font-size: 18px;
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     margin-bottom: 10px;
- }
- .paraaa{
+}
+
+.paraaa {
     color: rgb(130, 128, 128);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
- .h3 i{
+}
+
+.h3 i {
     color: #0070BA;
     margin-right: 10px;
- }
-  .submit-btn{
+}
+
+.submit-btn {
     background-color: #0070BA;
     color: white;
     font-size: 20px;
-   padding-top: 15px;
-   padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -618,8 +628,15 @@ select option {
     margin-bottom: 20px;
     border: 2px solid #0070BA;
     border-radius: 10px;
-  }
-  .submit-btn i{
+}
+
+.submit-btn i {
     margin-right: 10px;
     font-size: 20px;
-  }
+}
+
+#personal-info {
+    background-color: white;
+    cursor: default;
+     color: rgb(91, 90, 90);
+}
