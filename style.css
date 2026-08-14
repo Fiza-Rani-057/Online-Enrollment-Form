@@ -451,7 +451,7 @@ select option {
 .photo-div {
     height: auto;
     width: 88%;
-    padding: 5%;
+    padding: 1%;
     border: 2px solid rgb(208, 204, 204);
     margin-left: 6%;
     display: flex;
@@ -476,8 +476,8 @@ select option {
 .para {
     color: rgb(174, 167, 167);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    margin: 5px 10px;
+    font-size: 13px;
+    margin: 0px 10px;
 }
 
 #uploaded-icon {
@@ -492,4 +492,34 @@ select option {
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
+}
+
+/* Section 7  */
+
+.conditions {
+    height: auto;
+    width: 88%;
+    padding: 1%;
+    background-color: #f0f7fc;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border: 1px solid #a2d4f6;
+    border-radius: 10px;
+}
+
+#agree {
+    width: 20px;
+    height: 20px;
+    accent-color: #0878c9;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.conditions label {
+    font-size: 15px;
+    color: rgb(72, 72, 72);
+        text-align: justify;
 }
