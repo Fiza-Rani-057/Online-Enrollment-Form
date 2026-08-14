@@ -341,6 +341,10 @@ select{
    border: 2px solid rgb(216, 216, 216);
    background-color: #f7f6f6;
  }
+ input::placeholder{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
  label{
     font-size: 15px;
     margin-left: 5px;
