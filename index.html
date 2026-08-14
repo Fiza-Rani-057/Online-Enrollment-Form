@@ -170,15 +170,35 @@
             </select>
         </div>
         <label for="" id="label"> Where did you hear about us? <span>*</span></label>
-        <span id="span"> 0/220 characters</span><br> <br>
-        <input type=" text" placeholder="Enter your complete address(minimum 10 
-characters )" id="address"> <br>
-        <label for="" id="laptop">Do you have a Laptop?<span>*</span></label>
+           <span id="span"></span><br> <br>
+           <select name="" id="Address"> Where did you hear about us?
+            <option value="">Facebook</option>
+            <option value="">Instagram</option>
+            <option value="">Google search</option>
+            <option value="">TikTok</option>
+        </select>
+        </div>
+       <label class="laptop"> Do You have a Laptop? <span>*</span></label>
 
-   <input type="radio" name="laptop" value="Yes" id="Yes">Yes
-   <input type="radio" name="laptop" value="No" id="No"> No
+<div class="radio-group">
+      <input type="radio" name="laptop"id="yes">
+    <label id="Yes"> Yes</label>
+    <input type="radio" name="laptop" id="no">
+    <label id="No"> No </label>  
+</div>
         <!-- Section 5  -->
-
+         <!-- Section 6  -->
+          <h2 class="course-details"><i class="fa-solid fa-upload"></i>
+        Upload Picture</h2> <br>
+        <div class="photo-div">
+        <i class="fa-solid fa-upload" id="uploaded-icon"></i> <br>
+        <button id="uploaded-button">+ Upload Picture</button>
+        <p class="para">• With white or blue background</p>
+        <p class="para">• File size must be less than 1MB</p>
+        <p class="para">• File type: jpg, jpeg, png</p>
+        <p class="para">• Upload your recent passport size picture</p>
+        <p class="para">• Your Face should be clearly visible without any Glasses</p>
+        </div>
         <script src="script.js"></script>
 </body>
 
