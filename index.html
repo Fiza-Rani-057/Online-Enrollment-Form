@@ -18,7 +18,7 @@
         rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;6
  00;700&display=swap" rel="stylesheet"> 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <!-- 3. Aapki apni CSS File (Is ko Tailwind ke baad hi rakhein) -->
     <link rel="stylesheet" href="style.css">
@@ -135,9 +135,12 @@
                     <span>*</span>
                 </label> <br>
                 <input type="text" placeholder="Enter Father Name" id="personal-info"> <br>
-                <label for="city" id="city"> Email <span>*</span></label>
+                <label for="city" 
+                   class="campus"> Email <span>*</span></label>
                 <input type="email" placeholder="Enter Your Email" id="personal-info"> <br>
-                <label for="campus" id="campus"> Father's Phone <span>*</span></label>
+                <label for="campus" 
+                 class="campus"> Father's Phone <span>*</span>
+                 </label>  
                 <input type="number" placeholder="Enter Phone Number" id="personal-info"> <br>
                 <label for="campus" id="campus"> Father's ID <span>*</span></label>
                 <input type="number" placeholder="Enter ID Number" id="personal-info">
@@ -272,16 +275,17 @@
     relative overflow-hidden">
             <div class="flex justify-start items-center mb-4">
                 <div class="w-23 relative right-1"><img alt="Saylani Mass
-            IT Training" width="80" height="40" decoding="async" data-nimg="1" class="w-full h-auto object-contain"
-                        style="color:transparent"
-     srcset="/_next/image?url=%2Fassets%2Ftransparent_logo.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Fassets%2Ftransparent_logo.png&amp;w=256&amp;q=75 2x"
-src="/_next/image?url=%2Fassets%2Ftransparent_logo.png&amp;w=256&amp;q=75">
+       IT Training" width="80" height="40" decoding="async" data-nimg="1" class="w-full h-auto object-contain"
+             style="color:transparent; height: 70px;"
+     srcset="images/image_cde5ae36.png"
+  src="images/image_cde5ae36.png">
     </div>
                 <div class="w-38 ml-4 mt-2"><a target="_blank" href="https://saylaniwelfare.com/"><img
                             alt="Saylani Logo" width="120" height="40" decoding="async" data-nimg="1"
-                            class="w-full h-auto object-contain" style="color:transparent"
-                            srcset="/_next/image?url=%2Fassets%2Fsaylani_logo.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2Fassets%2Fsaylani_logo.png&amp;w=256&amp;q=75 2x"
-                            src="/_next/image?url=%2Fassets%2Fsaylani_logo.png&amp;w=256&amp;q=75"></a></div>
+                            class="w-full h-auto object-contain" 
+                            style="color:transparent; height: 70px;"
+             srcset="images/image_2d49817c.png"
+           src="images/image_2d49817c.png"></a></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
                 <div class="lg:col-span-4 md:col-span-2">
@@ -484,24 +488,24 @@ src="/_next/image?url=%2Fassets%2Ftransparent_logo.png&amp;w=256&amp;q=75">
                 <div class="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm"
                     style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">
                     <p class="text-center sm:text-left order-2 sm:order-1">© <!-- -->2013<!-- --> - <!-- -->2026<!-- -->
-                        <span class="text-white font-semibold">Saylani Mass IT Training</span>. <!-- -->All rights
-                        reserved.
-                    </p>
-                    <div class="flex flex-wrap justify-center gap-3 sm:gap-6 order-1 sm:order-2 mb-3 sm:mb-0"><a
-                            class="hover:text-white transition-colors whitespace-nowrap"
-                            style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
-                            href="/privacy-policy">Privacy Policy</a><a
-                            class="hover:text-white transition-colors whitespace-nowrap"
-                            style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
-                            href="/terms-of-service">Terms of Service</a></div>
+          <!-- <span class="text-white font-semibold">Saylani Mass IT Training</span>. <!-- -->All rights
+         reserved.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 sm:gap-6 order-1 sm:order-2 mb-3 sm:mb-0"><a
+     class="hover:text-white transition-colors whitespace-nowrap"
+     style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+        href="/privacy-policy">Privacy Policy</a><a
+           class="hover:text-white transition-colors whitespace-nowrap"
+         style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+         href="/terms-of-service">Terms of Service</a></div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </div> 
+    </footer>  
 
 
     
     <script src="script.js"></script>
-</body>
+</body> 
 
 </html>
