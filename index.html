@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cloudflare.com"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,6 +16,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;6
+ 00;700&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 3. Aapki apni CSS File (Is ko Tailwind ke baad hi rakhein) -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -78,196 +83,425 @@
 
     <!-- Section 2  -->
     <!-- Section 3  -->
-     <form>
-    <h2 class="course-details"><i class="fa-solid fa-location-dot"></i>
-        Location & Course Details</h2>
-    <div class=" main-form-div">
-        <div class="form-div-1">
-            <label value="">Select Country<span>*</span></label> <br>
+    <form>
+        <h2 class="course-details"><i class="fa-solid fa-location-dot"></i>
+            Location & Course Details</h2>
+        <div class=" main-form-div">
+            <div class="form-div-1">
+                <label value="">Select Country<span>*</span></label> <br>
 
-            <select id="course" name="course">
-                <option value="Austaralia">Australia</option>
-                <option value="England">England</option>
-                <option value="Pakistan">Pakistan</option>
-            </select> <br>
-            <label for="gender">Select Gender <span>*</span></label> <br>
-            <input type="text" placeholder="Select Gender" disabled> <br>
-            <label for="Course">Select Course <span>*</span></label> <br>
-            <input type="text" placeholder="No Course available" disabled> <br>
+                <select id="course" name="course">
+                    <option value="Austaralia">Australia</option>
+                    <option value="England">England</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select> <br>
+                <label for="gender">Select Gender <span>*</span></label> <br>
+                <input type="text" placeholder="Select Gender" disabled> <br>
+                <label for="Course">Select Course <span>*</span></label> <br>
+                <input type="text" placeholder="No Course available" disabled> <br>
+            </div>
+            <div class="form-div-2">
+                <label for="Class"> Select Class Preference
+                    <span>*</span>
+                </label> <br>
+                <input type="text" placeholder="Select Class Preference" disabled> <br>
+                <label for="city" id="city"> Select City <span>*</span></label>
+                <input type="text" placeholder="Select City"> <br>
+                <label for="campus" id="campus"> Select Campus <span>*</span></label>
+                <input type="text" placeholder="Select Campus" disabled>
+            </div>
+
         </div>
-        <div class="form-div-2">
-            <label for="Class"> Select Class Preference
-                <span>*</span>
-            </label> <br>
-            <input type="text" placeholder="Select Class Preference" disabled> <br>
-            <label for="city" id="city"> Select City <span>*</span></label>
-            <input type="text" placeholder="Select City"> <br>
-            <label for="campus" id="campus"> Select Campus <span>*</span></label>
-            <input type="text" placeholder="Select Campus" disabled>
+        <!-- Section 3  -->
+        <!-- Section 4  -->
+        <h2 class="course-details"><i class="fa-regular fa-user"></i>
+            Personal Information</h2>
+
+        <div class=" main-form-div">
+            <div class="form-div-1">
+                <label value="">
+                    Full Name<span>*</span></label> <br>
+                <input type="text" placeholder="Enter Your Full Name" id="personal-info"><br>
+                <label for="gender">Date Of Birth <span>*</span></label> <br>
+                <input type="date" id="personal-info">
+                <br>
+                <label for="Course"> Phone<span>*</span></label> <br>
+                <input type="text" placeholder="Enter Phone Number" id="personal-info"> <br>
+                <label for="Course">ID Number<span>*</span></label> <br>
+                <input type="text" placeholder="Enter ID Number" id="personal-info"> <br>
+            </div>
+            <div class="form-div-2">
+                <label for="Class"> Father Name
+                    <span>*</span>
+                </label> <br>
+                <input type="text" placeholder="Enter Father Name" id="personal-info"> <br>
+                <label for="city" id="city"> Email <span>*</span></label>
+                <input type="email" placeholder="Enter Your Email" id="personal-info"> <br>
+                <label for="campus" id="campus"> Father's Phone <span>*</span></label>
+                <input type="number" placeholder="Enter Phone Number" id="personal-info"> <br>
+                <label for="campus" id="campus"> Father's ID <span>*</span></label>
+                <input type="number" placeholder="Enter ID Number" id="personal-info">
+            </div>
+
         </div>
+        <label for="" id="label"> Address <span>*</span></label>
+        <span id="span"> 0/220 characters</span><br> <br>
+        <input type=" text" placeholder="Enter your complete address(minimum 10 characters )" id="address">
 
-    </div>
-    <!-- Section 3  -->
-    <!-- Section 4  -->
-    <h2 class="course-details"><i class="fa-regular fa-user"></i>
-        Personal Information</h2>
+        <!-- Section 4 -->
+        <!-- SEction 5  -->
+        <div class="main-form-div">
+            <div class="form-div-1">
+                <label value="">Last Qualification<span>*</span></label> <br>
 
-    <div class=" main-form-div">
-        <div class="form-div-1">
-            <label value="">
-                Full Name<span>*</span></label> <br>
-            <input type="text" placeholder="Enter Your Full Name" 
-            id="personal-info"><br>
-            <label for="gender">Date Of Birth <span>*</span></label> <br>
-            <input type="date"   id="personal-info">
-            <br>
-            <label for="Course"> Phone<span>*</span></label> <br>
-            <input type="text" placeholder="Enter Phone Number"
-              id="personal-info"> <br>
-            <label for="Course">ID Number<span>*</span></label> <br>
-            <input type="text" placeholder="Enter ID Number"
-              id="personal-info"> <br>
-        </div>
-        <div class="form-div-2">
-            <label for="Class"> Father Name
-                <span>*</span>
-            </label> <br>
-            <input type="text" placeholder="Enter Father Name"
-              id="personal-info"> <br>
-            <label for="city" id="city"> Email <span>*</span></label>
-            <input type="email" placeholder="Enter Your Email"
-              id="personal-info"> <br>
-            <label for="campus" id="campus"> Father's Phone <span>*</span></label>
-            <input type="number" placeholder="Enter Phone Number"
-              id="personal-info"> <br>
-            <label for="campus" id="campus"> Father's ID <span>*</span></label>
-            <input type="number" placeholder="Enter ID Number"
-              id="personal-info">
-        </div>
+                <select name="" id="personal-info">Last Qualification
+                    <option value="Matric">Matriculation</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="other"> Other</option>
+                    <1></1>
+                </select>
 
-    </div>
-    <label for="" id="label"> Address <span>*</span></label>
-    <span id="span"> 0/220 characters</span><br> <br>
-    <input type=" text"
- placeholder="Enter your complete address(minimum 10 characters )" id="address">
-
-    <!-- Section 4 -->
-    <!-- SEction 5  -->
-    <div class="main-form-div">
-        <div class="form-div-1">
-            <label value="">Last Qualification<span>*</span></label> <br>
-
-            <select name="" id="personal-info">Last Qualification
-                <option value="Matric">Matriculation</option>
-                <option value="Intermediate">Intermediate</option>
-                <option value="Undergraduate">Undergraduate</option>
-                <option value="Bachelor's Degree">Bachelor's Degree</option>
-                <option value="Master's Degree">Master's Degree</option>
-                <option value="other"> Other</option>
-                <1></1>
+                <br>
+            </div>
+            <div class="form-div-2">
+                <label for="gender" id="cs">Computer Profficiency<span>*</span></label> <br>
+                <select name="" id="select">Select Your Computer Proffeciency
+                    <option value="bigginer">Beginner</option>
+                    <option value="advanced">Advance</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="Expert">Expert</option>
+                </select>
+            </div>
+            <label for="" id="label"> Where did you hear about us? <span>*</span></label>
+            <span id="span"></span><br> <br>
+            <select name="" id="Address"> Where did you hear about us?
+                <option value="">Facebook</option>
+                <option value="">Instagram</option>
+                <option value="">Google search</option>
+                <option value="">TikTok</option>
             </select>
+        </div>
+        <label class="laptop"> Do You have a Laptop? <span>*</span></label>
 
-            <br>
+        <div class="radio-group">
+            <input type="radio" name="laptop" id="yes">
+            <label id="Yes"> Yes</label>
+            <input type="radio" name="laptop" id="no">
+            <label id="No"> No </label>
         </div>
-        <div class="form-div-2">
-            <label for="gender" id="cs">Computer Profficiency<span>*</span></label> <br>
-            <select name="" id="select">Select Your Computer Proffeciency
-                <option value="bigginer">Beginner</option>
-                <option value="advanced">Advance</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="Expert">Expert</option>
-            </select>
-        </div>
-        <label for="" id="label"> Where did you hear about us? <span>*</span></label>
-           <span id="span"></span><br> <br>
-           <select name="" id="Address"> Where did you hear about us?
-            <option value="">Facebook</option>
-            <option value="">Instagram</option>
-            <option value="">Google search</option>
-            <option value="">TikTok</option>
-        </select>
-        </div>
-       <label class="laptop"> Do You have a Laptop? <span>*</span></label>
-
-<div class="radio-group">
-      <input type="radio" name="laptop"id="yes">
-    <label id="Yes"> Yes</label>
-    <input type="radio" name="laptop" id="no">
-    <label id="No"> No </label>  
-</div>
         <!-- Section 5  -->
-         <!-- Section 6  -->
-          <h2 class="course-details"><i class="fa-solid fa-upload"></i>
-        Upload Picture</h2> <br>
+        <!-- Section 6  -->
+        <h2 class="course-details"><i class="fa-solid fa-upload"></i>
+            Upload Picture</h2> <br>
         <div class="photo-div">
-        <i class="fa-solid fa-upload" id="uploaded-icon"></i> <br>
-        <button id="uploaded-button">+ Upload Picture</button>
-        <p class="para">• With white or blue background</p>
-        <p class="para">• File size must be less than 1MB</p>
-        <p class="para">• File type: jpg, jpeg, png</p>
-        <p class="para">• Upload your recent passport size picture</p>
-        <p class="para">• Your Face should be clearly visible without any Glasses</p>
+            <i class="fa-solid fa-upload" id="uploaded-icon"></i> <br>
+            <button id="uploaded-button">+ Upload Picture</button>
+            <p class="para">• With white or blue background</p>
+            <p class="para">• File size must be less than 1MB</p>
+            <p class="para">• File type: jpg, jpeg, png</p>
+            <p class="para">• Upload your recent passport size picture</p>
+            <p class="para">• Your Face should be clearly visible without any Glasses</p>
         </div>
         <!-- Section 7   -->
-     <h2 class="course-details"><i class="fa-solid fa-shield-halved"></i>
-      Terms & Conditions</h2> <br>
-      <div class="conditions">
-        <label for=""> 
-     <input type="checkbox" id="agree">
- I hereby solemnly declare that all information provided in this 
- application is true and accurate to the best of my knowledge. Furthermore,
-   I agree to abide by all current and future rules, regulations,
-  and policies established by SMIT.</label> <br>
-  <label for="">
-    <input type="checkbox" id="agree">
-I accept the responsibility to maintain good conduct throughout 
-the program and commit to focusing solely on learning. I will not engage
- in any political, unethical, or unrelated activities during my enrollment.
-  Any violation may result in 
-immediate cancellation of my admission.
-  </label> <br> 
-  <label for="">
-   <input type="checkbox" name="" id="agree">
-    Upon completion of the course, I agree to successfully complete any project assigned by SMIT as part 
-    of the program requirements.
-  </label> <br> 
- 
-  <label for="">
-     <input type="checkbox" id="agree">
-Female students are required to wear an abaya or hijab while
- attending classes.
-  </label> <br>
+        <h2 class="course-details"><i class="fa-solid fa-shield-halved"></i>
+            Terms & Conditions</h2> <br>
+        <div class="conditions">
+            <label for="">
+                <input type="checkbox" id="agree">
+                I hereby solemnly declare that all information provided in this
+                application is true and accurate to the best of my knowledge. Furthermore,
+                I agree to abide by all current and future rules, regulations,
+                and policies established by SMIT.</label> <br>
+            <label for="">
+                <input type="checkbox" id="agree">
+                I accept the responsibility to maintain good conduct throughout
+                the program and commit to focusing solely on learning. I will not engage
+                in any political, unethical, or unrelated activities during my enrollment.
+                Any violation may result in
+                immediate cancellation of my admission.
+            </label> <br>
+            <label for="">
+                <input type="checkbox" name="" id="agree">
+                Upon completion of the course, I agree to successfully complete any project assigned by SMIT as part
+                of the program requirements.
+            </label> <br>
 
-  <p class="paraa"> By submitting this form, you agree to our <span>Privacy Policy</span>
-     and  <span>Terms of Service.</span></p>
-      </div>
-       <!-- Section 8  -->
+            <label for="">
+                <input type="checkbox" id="agree">
+                Female students are required to wear an abaya or hijab while
+                attending classes.
+            </label> <br>
+
+            <p class="paraa"> By submitting this form, you agree to our <span>Privacy Policy</span>
+                and <span>Terms of Service.</span></p>
+        </div>
+        <!-- Section 8  -->
         <div class="imp-notice">
             <h3 class="h3">
                 <i class="fa-solid fa-circle-info"></i>
-                Important Notice:</h3>
+                Important Notice:
+            </h3>
             <p class="paraaa">Please ensure all information provided is accurate. Incomplete or
-                 false information may result in rejection of your application.</p>
+                false information may result in rejection of your application.</p>
         </div>
-         <!-- Captcha Logo  -->
+        <!-- Captcha Logo  -->
 
-         <div class="recaptcha">
-    <div class="captcha-check">
-        <input type="checkbox" id="captcha">
-        <label for="captcha">I'm not a robot</label>
+        <div class="recaptcha">
+            <div class="captcha-check">
+                <input type="checkbox" id="captcha">
+                <label for="captcha">I'm not a robot</label>
+            </div>
+
+            <div class="captcha-logo">
+                <span>↻</span>
+                <small>reCAPTCHA</small>
+            </div>
+        </div>
+        <button class="submit-btn">
+            <i class="fa-regular fa-file-lines"></i>
+            Submit Registration</button>
+    </form>
+    <!-- Footer  -->
+
+    <footer class="w-full text-gray-300" style="background:linear-gradient(to bottom right, #1a1a1a,
+    #2d2d2d, #1a1a1a)">
+        <div class="max-w-6xl px-6 md:px-10 py-8 m-auto 
+    relative overflow-hidden">
+            <div class="flex justify-start items-center mb-4">
+                <div class="w-23 relative right-1"><img alt="Saylani Mass
+            IT Training" width="80" height="40" decoding="async" data-nimg="1" class="w-full h-auto object-contain"
+                        style="color:transparent"
+     srcset="/_next/image?url=%2Fassets%2Ftransparent_logo.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Fassets%2Ftransparent_logo.png&amp;w=256&amp;q=75 2x"
+src="/_next/image?url=%2Fassets%2Ftransparent_logo.png&amp;w=256&amp;q=75">
     </div>
+                <div class="w-38 ml-4 mt-2"><a target="_blank" href="https://saylaniwelfare.com/"><img
+                            alt="Saylani Logo" width="120" height="40" decoding="async" data-nimg="1"
+                            class="w-full h-auto object-contain" style="color:transparent"
+                            srcset="/_next/image?url=%2Fassets%2Fsaylani_logo.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2Fassets%2Fsaylani_logo.png&amp;w=256&amp;q=75 2x"
+                            src="/_next/image?url=%2Fassets%2Fsaylani_logo.png&amp;w=256&amp;q=75"></a></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
+                <div class="lg:col-span-4 md:col-span-2">
+                    <p class="text-sm sm:text-base leading-relaxed mb-6 text-start md:text-left"
+                        style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">
+                        Empowering Pakistan's youth with world-class IT education and training programs to build a
+                        brighter digital future.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start gap-3 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-map-pin w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5"
+                                aria-hidden="true" style="color:#0B73B7">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg><span class="text-xs sm:text-sm" style="color:#9ca3af">A-25, Bahadurabad Chowrangi,
+                                Karachi, Pakistan</span></div>
+                        <div class="flex items-center gap-3 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-phone w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" aria-hidden="true"
+                                style="color:#6da800">
+                                <path
+                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+                                </path>
+                            </svg><a class="text-xs sm:text-sm hover:text-white transition-colors"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="tel:+922134161365">+92 21 111 729 526</a></div>
+                        <div class="flex items-center gap-3 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-mail w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" aria-hidden="true"
+                                style="color:#0B73B7">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            </svg><a class="text-xs sm:text-sm hover:text-white transition-colors"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="mailto:saylanimass@gmail.com">saylanimass@gmail.com</a></div>
+                    </div>
+                    <div class="flex justify-start gap-2 sm:gap-3"><a target="_blank"
+                            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                            style="background-color:#2d2d2d" aria-label="Facebook"
+                            href="https://www.facebook.com/saylani.smit"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-facebook w-4 h-4 sm:w-5 sm:h-5 transition-colors"
+                                aria-hidden="true" style="color:#9ca3af">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a><a target="_blank"
+                            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                            style="background-color:#2d2d2d" aria-label="Twitter" href="https://x.com/OfficialSwit"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-twitter w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true"
+                                style="color:#9ca3af">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg></a><a target="_blank"
+                            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                            style="background-color:#2d2d2d" aria-label="LinkedIn"
+                            href="https://www.linkedin.com/company/saylanimassit/"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-linkedin w-4 h-4 sm:w-5 sm:h-5 transition-colors"
+                                aria-hidden="true" style="color:#9ca3af">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a><a target="_blank"
+                            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                            style="background-color:#2d2d2d" aria-label="Instagram"
+                            href="https://www.instagram.com/saylani.smit/"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-instagram w-4 h-4 sm:w-5 sm:h-5 transition-colors"
+                                aria-hidden="true" style="color:#9ca3af">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg></a><a target="_blank"
+                            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                            style="background-color:#2d2d2d" aria-label="YouTube"
+                            href="https://www.youtube.com/@SaylaniMassITTraining"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-youtube w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true"
+                                style="color:#9ca3af">
+                                <path
+                                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
+                                </path>
+                                <path d="m10 15 5-3-5-3z"></path>
+                            </svg></a></div><a
+                        href="https://play.google.com/store/apps/details?id=com.saylanitech.smitlmsapp&amp;hl=en"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2.5 mt-6 rounded-xl px-4 py-2.5 transition-transform hover:scale-[1.03]"
+                        style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71));color:#ffffff"><svg
+                            width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="#ffc107"
+                                d="m23 12c0 .75-.42 1.41-1.03 1.75l-5.2 2.89-4.4-4.64 4.4-4.64 5.2 2.89c.61.34 1.03 1 1.03 1.75z">
+                            </path>
+                            <path fill="#03a9f4"
+                                d="m12.37 12-10.8 11.39c-.36-.36-.57-.85-.57-1.39v-20c0-.54.21-1.03.57-1.39z"></path>
+                            <path fill="#f44336"
+                                d="m12.37 12 4.4 4.64-12.8 7.11c-.29.16-.62.25-.97.25-.56 0-1.07-.23-1.43-.61z"></path>
+                            <path fill="#4caf50"
+                                d="m16.77 7.36-4.4 4.64-10.8-11.39c.36-.38.87-.61 1.43-.61.35 0 .68.09.97.25z"></path>
+                        </svg><span class="flex flex-col items-start leading-tight text-left"><span
+                                class="text-[9px] uppercase tracking-wide opacity-80">Get it on</span><span
+                                class="text-[15px] font-semibold -mt-0.5">Google Play</span></span></a>
+                </div>
+                <div class="lg:col-span-2 md:col-span-1">
+                    <h3 class="text-white text-base sm:text-lg font-bold mb-4 sm:mb-6 relative inline-block"
+                        style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">
+                        Quick Links<span
+                            class="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 sm:h-1 rounded-full"
+                            style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71))"></span></h3>
+                    <ul class="space-y-2 sm:space-y-3">
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/"><span>Home</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/chat"><span>Chat Us</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/enroll"><span>Enroll Now</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 
+    group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/download-id-card"><span>Download ID Card</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/entry-test-status"><span>Entry Test Status</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/result"><span>Check Results</span></a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 md:col-span-1">
+                    <h3 class="text-white text-base sm:text-lg font-bold mb-4 sm:mb-6 relative inline-block"
+                        style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">
+                        Our Courses<span
+                            class="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 sm:h-1 rounded-full"
+                            style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71))"></span></h3>
+                    <ul class="space-y-2 sm:space-y-3">
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/courses/modern-web-application-development"><span>Web Development</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/courses/agentic-ai"><span>Agentic AI</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/courses/artificial-intelligence-and-data-science"><span>AI &amp; Data
+                                    Science</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/courses/graphic-designing-with-ai"><span>Graphic Design</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/courses/3d-animation"><span>3D Animation</span></a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 md:col-span-2">
+                    <h3 class="text-white text-base sm:text-lg font-bold mb-4 sm:mb-6 relative inline-block"
+                        style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">
+                        Resources<span
+                            class="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 sm:h-1 rounded-full"
+                            style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71))"></span></h3>
+                    <ul class="space-y-2 sm:space-y-3">
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/courses"><span>Courses</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/campuses"><span>Campuses</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/contact"><span>Contact Us</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/privacy-policy"><span>Privacy Policy</span></a></li>
+                        <li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline"
+                                style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                                href="/terms-of-service"><span>Terms of Service</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t" style="border-color:#374151;background-color:rgba(26, 26, 26, 0.5)">
+            <div class=" max-w-6xl px-6 md:px-10 py-8 m-auto">
+                <div class="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm"
+                    style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">
+                    <p class="text-center sm:text-left order-2 sm:order-1">© <!-- -->2013<!-- --> - <!-- -->2026<!-- -->
+                        <span class="text-white font-semibold">Saylani Mass IT Training</span>. <!-- -->All rights
+                        reserved.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-3 sm:gap-6 order-1 sm:order-2 mb-3 sm:mb-0"><a
+                            class="hover:text-white transition-colors whitespace-nowrap"
+                            style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                            href="/privacy-policy">Privacy Policy</a><a
+                            class="hover:text-white transition-colors whitespace-nowrap"
+                            style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif"
+                            href="/terms-of-service">Terms of Service</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <div class="captcha-logo">
-        <span>↻</span>
-        <small>reCAPTCHA</small>
-    </div>
-</div>  
-  <button class="submit-btn">
-    <i class="fa-regular fa-file-lines"></i>
-    Submit Registration</button>
-</form>
 
-        <script src="script.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
