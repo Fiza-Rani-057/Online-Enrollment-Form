@@ -373,7 +373,6 @@ label {
     padding-bottom: 70px;
     width: 87%;
     border-radius: 10px;
-    border: 2px solid rgb(216, 216, 216);
     background-color: white;
     margin-left: 6%;
     margin-bottom: 20px;
@@ -431,7 +430,10 @@ select option {
     background-color: white;
     margin-left: 6%;
     margin-bottom: 20px;
-     color: rgb(91, 90, 90);
+     color: rgb(48, 46, 46);
+}
+#address::placeholder{
+    color: #242424;
 }
 
 .laptop {
@@ -639,5 +641,7 @@ select option {
 #personal-info {
     background-color: white;
     cursor: default;
-     color: rgb(91, 90, 90);
 }
+#personal-info::placeholder{
+    color: #242424;
+ }
