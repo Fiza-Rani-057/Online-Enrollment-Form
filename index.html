@@ -126,11 +126,11 @@
                 <input type="date" id="personal-info" required>
                 <br>
                 <label for="Course"> Phone<span>*</span></label> <br>
-                <input type="text" placeholder="Enter Phone Number" 
-                required id="personal-info"> <br>
+                <input type="number" placeholder="Enter Phone Number" 
+                required id="personal-info" class="phone-validation"> <br>
                 <label for="Course">ID Number<span>*</span></label> <br>
-                <input type="text" placeholder="Enter ID Number" 
-                required  id="personal-info"> <br>
+                <input type="number" placeholder="Enter ID Number" 
+                required  id="personal-info" class="valid-id"> <br>
             </div>
             <div class="form-div-2">
                 <label for="Class"> Father Name
@@ -142,20 +142,20 @@
                    class="campus"> Email <span>*</span></label>
                 <input type="email" placeholder="Enter Your Email"
                 required id="personal-info"> <br>
-                <label for="campus" 
+                <label for="campus"
                  class="campus"> Father's Phone <span>*</span>
                  </label>  
                 <input type="number" placeholder="Enter Phone Number"
-                required id="personal-info"> <br>
+                required id="personal-info" phone-validation> <br>
                 <label for="campus" id="campus"> Father's ID <span>*</span></label>
                 <input type="number" placeholder="Enter ID Number"
-                required id="personal-info">
+                required id="personal-info" class="valid-id">
             </div>
 
         </div>
         <label for="" id="label"> Address <span>*</span></label>
         <span id="span"> 0/220 characters</span><br> <br>
-        <input type=" text"
+        <input type=" text"  class="address-input"
         required placeholder="Enter your complete address(minimum 10 characters )" id="address">
 
         <!-- Section 4 -->
