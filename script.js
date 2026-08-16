@@ -9,7 +9,7 @@ function myFunction() {
 }
 //   Navbar
 // Address Feild Validation 
-let Form = document.querySelector('form')
+let Form = document.querySelector('form')  
 let address = document.querySelector('.address-input');
 Form.addEventListener('submit', function (e) {
   if (address.value.length < 10) {
@@ -18,6 +18,8 @@ Form.addEventListener('submit', function (e) {
     return false;
   }
 });
+
+//  Phone Number Validation 
 Form.addEventListener('submit', function (i) {
   let phone = document.querySelectorAll('.phone-validation');
   for (let x = 0; x < phone.length; x++) {
@@ -28,6 +30,8 @@ Form.addEventListener('submit', function (i) {
     }
   }
 });
+
+//  Id Validation 
 Form.addEventListener('submit', function (f) {
 
   let id = document.querySelectorAll('.valid-id');
