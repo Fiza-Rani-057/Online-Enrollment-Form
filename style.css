@@ -348,15 +348,15 @@ input {
     padding-bottom: 18px;
     border-radius: 10px;
     border: 2px solid rgb(216, 216, 216);
-    background-color: #f7f6f6;
     cursor: not-allowed;
-
+     background-color: white;
+    cursor: default;
 }
 
 input::placeholder {
-    font-size: 15px;
+    font-size: 13px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(110, 110, 110, 0.4);
+    color: #585555;
 }
 
 input:focus {
@@ -643,11 +643,3 @@ select option {
     margin-right: 10px;
     font-size: 20px;
 }
-
-#personal-info {
-    background-color: white;
-    cursor: default;
-}
-#personal-info::placeholder{
-   color: #585555;
- }
