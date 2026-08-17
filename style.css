@@ -120,58 +120,61 @@
   /* Media Query  */
   @media screen and (max-width: 600px) {
 
-    .topnav {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-    }
+      .topnav {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+      }
 
-    .img-div {
-        margin-right: 0;
-        margin-top: 15px;
-    }
+      .img-div {
+          margin-right: 0;
+          margin-top: 15px;
+      }
 
-    .navbar {
-        margin-top: 15px;
-    }
+      .navbar {
+          margin-top: 15px;
+      }
 
-    /* Normal links hide */
-    .navbar a:not(.icon) {
-        display: none;
-    }
+      /* Normal links hide */
+      .navbar a:not(.icon) {
+          display: none;
+      }
 
-    /* Hamburger show */
-    .navbar a.icon {
-        display: block;
-        font-size: 22px;
-        padding: 10px;
-    }
+      /* Hamburger show */
+      .navbar a.icon {
+          display: block;
+          font-size: 22px;
+          padding: 10px;
+      }
 
-    /* Button hide */
-    #btn1 {
-        display: none;
-    }
+      /* Button hide */
+      #btn1 {
+          display: none;
+      }
 
-    /* Menu open hone ke baad */
-    .topnav.responsive .navbar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-    .topnav.responsive .navbar a:not(.icon) {
-        display: block;
-        text-align: left;
-    }
-    .topnav.responsive #btn1 {
-        display: block;
-    }
-    .topnav.responsive .navbar a.icon {
-        display: block;
-    }
-}
+      /* Menu open hone ke baad */
+      .topnav.responsive .navbar {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 5px;
+      }
+
+      .topnav.responsive .navbar a:not(.icon) {
+          display: block;
+          text-align: left;
+      }
+
+      .topnav.responsive #btn1 {
+          display: block;
+      }
+
+      .topnav.responsive .navbar a.icon {
+          display: block;
+      }
+  }
 
   /* Navbar  */
   /* Hero Section  */
@@ -355,7 +358,7 @@
   .course-details {
       display: flex;
       text-align: left;
-    font-size: clamp(20px, 4vw, 25px);
+      font-size: clamp(20px, 4vw, 25px);
       margin-top: 40px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight: 600;
@@ -485,7 +488,7 @@
       padding-left: 20px;
       padding-right: 400px;
       padding-top: 18px;
-      padding-bottom: 18px;
+      padding-bottom: 10px;
       border-radius: 10px;
       border: 2px solid rgb(216, 216, 216);
       background-color: white;
