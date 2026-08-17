@@ -311,17 +311,16 @@
       width: 100%;
       flex-wrap: wrap;
       margin-top: 40px;
+      justify-content: center;
+      gap: 20px;
   }
 
   select {
       padding-left: 20px;
-      padding-right: 400px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 20px;
       padding-right: 300px;
       padding-top: 15px;
       padding-bottom: 15px;
+      padding-right: 300px;
       border-radius: 10px;
       border: 2px solid rgb(216, 216, 216);
       background-color: white;
@@ -338,13 +337,13 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      padding: 0px 6%;
   }
+
   input {
       padding-left: 20px;
-      padding-right: 320px;
-      padding-top: 18px;
-      padding-bottom: 18px;
+      padding-right: 300px;
+      padding-top: 15px;
+      padding-bottom: 15px;
       border-radius: 10px;
       border: 2px solid rgb(216, 216, 216);
       cursor: not-allowed;
@@ -373,17 +372,24 @@
       padding-left: 20px;
       padding-top: 20px;
       padding-bottom: 70px;
-      width: 87%;
+      width: 85%;
       border-radius: 10px;
       background-color: white;
-      margin-left: 6%;
-      margin-bottom: 20px;
+      margin-left: 7%;
       cursor: default;
       color: rgb(91, 90, 90);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+       flex-grow: 1;
+       margin-top: 0;
   }
-
-  #label {
-      margin-left: 6%;
+  #information{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-self: flex-start;
+    margin-left: 8%;
   }
 
   #span {
@@ -399,7 +405,7 @@
   }
 
   .campus {
-      margin-bottom: 26px;
+      margin-bottom: 24px;
   }
 
   .form-div-2 {
@@ -429,16 +435,16 @@
 
   #Address {
       padding-left: 20px;
-      padding-top: 20px;
-      width: 86%;
+      width: 85%;
       border-radius: 10px;
       border: 2px solid rgb(216, 216, 216);
       background-color: white;
-      margin-left: 6%;
-      margin-bottom: 20px;
       color: rgb(48, 46, 46);
+      margin-bottom: 20px;
   }
-
+ .address{
+margin-left: 8%;
+ }
   #address::placeholder {
       color: #585555;
   }
