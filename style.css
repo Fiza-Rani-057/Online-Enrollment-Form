@@ -327,6 +327,8 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: rgb(91, 90, 90);
       font-size: 15px;
+      /* width: 100%;
+      max-width: 500px; */
   }
 
   span {
@@ -349,8 +351,15 @@
       cursor: not-allowed;
       background-color: white;
       cursor: default;
+      /* width: 100%;
+      max-width: 500px; */
   }
 
+   .input-width{
+      width: 90%;
+      max-width: 500px; 
+      margin-left: 20px;
+   }
   input::placeholder {
       font-size: 13px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -364,7 +373,7 @@
 
   label {
       font-size: 15px;
-      margin-left: 5px;
+      margin-left: 25px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
@@ -381,15 +390,18 @@
       display: flex;
       flex-wrap: wrap;
       gap: 0;
-       flex-grow: 1;
-       margin-top: 0;
+      flex-grow: 1;
+      margin-top: 0;
   }
-  #information{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-self: flex-start;
-    margin-left: 8%;
+
+  #information {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-self: flex-start;
+      margin-left: 8%;
+      margin-bottom: 20px;
+
   }
 
   #span {
@@ -435,36 +447,35 @@
 
   #Address {
       padding-left: 20px;
-      width: 85%;
       border-radius: 10px;
       border: 2px solid rgb(216, 216, 216);
       background-color: white;
       color: rgb(48, 46, 46);
       margin-bottom: 20px;
+      margin-left: 8%;
+      width: 85%;
+      box-sizing: border-box;
   }
- .address{
-margin-left: 8%;
- }
+
+  .address {
+      margin-left: 8%;
+  }
+
   #address::placeholder {
       color: #585555;
   }
 
   .laptop {
-      margin-left: 6%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      margin-left: 8%;
   }
-
-  #Yes,
-  #No {
-      margin-left: 5px;
+  #Yes,#No{
+    margin: 10px;
   }
-
-  #yes {
-      margin-left: 6%;
-      margin-top: 1%;
-  }
-
-  #no {
-      margin-left: 1%;
+  #yes{
+    margin-left: 8%;
   }
 
   /* Section 6  */

@@ -86,20 +86,20 @@
             Location & Course Details</h2>
         <div class=" main-form-div">
             <div class="form-div-1">
-                <label value="">Select Country<span>*</span></label> <br>
+          <label value="">Select Country<span>*</span></label> <br>
 
-                <select id="course" name="course">
+                <select id="course" name="course" class="input-width">
                     <option value="Austaralia">Australia</option>
                     <option value="England">England</option>
                     <option value="Pakistan">Pakistan</option>
                 </select> <br>
                 <label for="gender">Select Gender <span>*</span></label> <br>
-                 <select name="Course"> 
+                 <select name="Course" class="input-width"> 
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select> <br>
-                <label for="Course">Select Course <span>*</span></label> <br>
-                <select name="Course"> 
+                <label for="Course" class="input-width">Select Course <span>*</span></label> <br>
+                <select name="Course" class="input-width"> 
                     <option value="Web">Web Development</option>
                     <option value="AI">AI and data Science</option>
                     <option value="Cloud">Cloud Data Engeenering</option>
@@ -110,19 +110,19 @@
                 <label for="Class"> Select Class Preference
                     <span>*</span>
                 </label> <br>
-           <select name="Course"> 
+           <select name="Course" class="input-width"> 
                     <option value="online">Onsite</option>
                     <option value="onsite">Online</option>
                 </select> <br>
                 <label for="city" id="city"> Select City <span>*</span></label>
-                 <select name="Course"> 
+                 <select name="Course" class="input-width"> 
                     <option value="Web">Sukkur</option>
                     <option value="AI">Islamabad</option>
                     <option value="Cloud">Lahore</option>
                     <option value="DM">Karachi</option>
                 </select> <br>
      <label for="campus" id="campus"> Select Campus <span>*</span></label>
-                 <select name="Course"> 
+                 <select name="Course" class="input-width"> 
                     <option value="Web">DHA Campus</option>
                     <option value="AI">Paposh Campus</option>
                     <option value="Cloud">Aliabad Campus</option>
@@ -141,35 +141,37 @@
                 <label value="">
                     Full Name<span>*</span></label> <br>
                 <input type="text" placeholder="Enter Your Full Name"
-                 id="personal-info" required><br>
+                 id="personal-info" required class="input-width"><br>
                 <label for="gender" >Date Of Birth <span>*</span></label> <br>
-                <input type="date" id="personal-info" required>
+                <input type="date" id="personal-info" required 
+                class="input-width">
                 <br>
                 <label for="Course"> Phone<span>*</span></label> <br>
                 <input type="number" placeholder="Enter Phone Number" 
-                required id="personal-info" class="phone-validation"> <br>
+                required id="personal-info" class="phone-validation input-width">
+                 <br>
                 <label for="Course">ID Number<span>*</span></label> <br>
                 <input type="number" placeholder="Enter ID Number" 
-                required  id="personal-info" class="valid-id"> <br>
+                required  id="personal-info" class="valid-id  input-width" > <br>
             </div>
             <div class="form-div-2">
                 <label for="Class"> Father Name
                     <span>*</span>
                 </label> <br>
                 <input type="text" placeholder="Enter Father Name"
-                required id="personal-info"> <br>
+                required id="personal-info" class="input-width" > <br>
                 <label for="city" 
                    class="campus"> Email <span>*</span></label>
                 <input type="email" placeholder="Enter Your Email"
-                required id="personal-info"> <br>
+                required id="personal-info" class="input-width"> <br>
                 <label for="campus"
-                 class="campus"> Father's Phone <span>*</span>
+                 class="campus" > Father's Phone <span>*</span>
                  </label>  
                 <input type="number" placeholder="Enter Phone Number"
-                required id="personal-info" phone-validation> <br>
+                required id="personal-info" class="phone-validation input-width"> <br>
                 <label for="campus" id="campus"> Father's ID <span>*</span></label>
                 <input type="number" placeholder="Enter ID Number"
-                required id="personal-info" class="valid-id">
+                required id="personal-info" class="valid-id input-width">
             </div>
         </div>
         <label for="" class="address"> Address <span>*</span>
@@ -185,7 +187,7 @@
             <div class="form-div-1">
                 <label value="">Last Qualification<span>*</span></label> <br>
 
-                <select name="" id="personal-info">Last Qualification
+                <select name="" id="personal-info" class="input-width">Last Qualification
                     <option value="Matric">Matriculation</option>
                     <option value="Intermediate">Intermediate</option>
                     <option value="Undergraduate">Undergraduate</option>
@@ -199,21 +201,23 @@
             </div>
             <div class="form-div-2">
                 <label for="gender" id="cs">Computer Profficiency<span>*</span></label> <br>
-                <select name="" id="select">Select Your Computer Proffeciency
+                <select name="" id="select" class="input-width">Select Your Computer Proffeciency
                     <option value="bigginer">Beginner</option>
                     <option value="advanced">Advance</option>
                     <option value="intermediate">Intermediate</option>
                     <option value="Expert">Expert</option>
                 </select>
             </div>
-  <label for="" id="information">Where did you hear about us? <span>*</span></label>
+        
+   </div>
+    <label for="Address" id="information">Where did you hear about us? <span>*</span></label>
             <select name="" id="Address"> Where did you hear about us?
                 <option value="">Facebook</option>
                 <option value="">Instagram</option>
                 <option value="">Google search</option>
                 <option value="">TikTok</option>
             </select>
-        </div>
+    
         <label class="laptop"> Do You have a Laptop? <span>*</span></label>
 
         <div class="radio-group">
@@ -221,7 +225,8 @@
             <label id="Yes"> Yes</label>
             <input type="radio" name="laptop" id="no">
             <label id="No"> No </label>
-        </div>
+            </div>
+      
         <!-- Section 5  -->
         <!-- Section 6  -->
         <h2 class="course-details"><i class="fa-solid fa-upload"></i>
