@@ -355,7 +355,7 @@
   .course-details {
       display: flex;
       text-align: left;
-      font-size: 24px;
+    font-size: clamp(20px, 4vw, 25px);
       margin-top: 40px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight: 600;
