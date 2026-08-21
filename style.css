@@ -30,13 +30,16 @@
       text-decoration: none;
       font-size: 15px;
   }
+
   .topnav a:hover {
       color: rgb(8, 6, 6);
   }
+
   .topnav a.active {
 
       color: rgb(16, 15, 15);
   }
+
   .topnav .icon {
       display: none;
   }
@@ -426,19 +429,21 @@
   }
 
   #address {
-      padding-left: 20px;
+      padding-left: 30px;
       padding-top: 20px;
       padding-bottom: 70px;
-      width: 85%;
+      width: 100%;
+      max-width: 1000px;
       border-radius: 10px;
       background-color: white;
-      margin-left: 7%;
       cursor: default;
       color: rgb(91, 90, 90);
       display: flex;
       flex-wrap: wrap;
       gap: 0;
       flex-grow: 1;
+      justify-self: flex-start;
+      margin-left: 10%;
       margin-top: 0;
   }
 
@@ -447,7 +452,7 @@
       flex-wrap: wrap;
       flex-grow: 1;
       justify-self: flex-start;
-      margin-left: 8%;
+      margin-left: 10%;
       margin-bottom: 20px;
 
   }
@@ -500,13 +505,16 @@
       background-color: white;
       color: rgb(48, 46, 46);
       margin-bottom: 20px;
-      margin-left: 8%;
-      width: 85%;
+      margin-left: 10%;
+      display: flex;
+      justify-self: flex-start;
+      width: 100%;
+      max-width: 1000px;
       box-sizing: border-box;
   }
 
   .address {
-      margin-left: 8%;
+      margin-left: 10%;
   }
 
   #address::placeholder {
